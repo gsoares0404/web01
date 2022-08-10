@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    margin-right: 200px;
+    justify-content: center;
+    background-color: white;
+    margin-bottom: 315px;
+  }
+  
+  .perspective-text {
+    margin-top: 250px;
+    font-family: Arial;
+    font-size: 60px;
+    font-weight: 900;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+  }
+  
+  .perspective-line {
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  p {
+    margin: 0;
+    height: 50px;
+    line-height: 50px;
+    transition: all 0.5s ease-in-out;
+    color: black;
+  }
+  
+  .main-title p {
+    margin: 0;
+    height: 50px;
+    line-height: 50px;
+    transition: all 0.5s ease-in-out;
+    color: rgb(13, 111, 13);
+  }
+  
+  .perspective-line:nth-child(odd) {
+    transform: skew(60deg, -30deg) scaleY(0.667);
+  }
+  
+  .perspective-line:nth-child(even) {
+    transform: skew(0deg, -30deg) scaleY(1.333);
+  }
+  
+  .perspective-text:hover p {
+    transform: translate(0, -50px);
+  }
+  
+  .perspective-line:nth-child(1) {
+    left: 29px;
+  }
+  
+  .perspective-line:nth-child(2) {
+    left: 58px;
+  }
+  
+  .perspective-line:nth-child(3) {
+    left: 87px;
+  }
+  
+  .perspective-line:nth-child(4) {
+    left: 116px;
+  }
+  
+  .perspective-line:nth-child(5) {
+    left: 145px;
+  }
+  
+  .perspective-line:nth-child(6) {
+    left: 174px;
+  }
+  
+  body, html {
+    height: 500vh;
+  }
+  
+  .scrolling-text {
+    height: 200vh;
+  }
+  
+  .line-1 {
+    position: fixed;
+    top: 30%;
+    left: -10000px;
+    white-space: nowrap;
+  }
+  
+  .line-1 h1 {
+    font-size: 200px;
+  }
+  
+  .line-2 {
+    position: fixed;
+    top: 55%;
+    right: -10000px;
+    white-space: nowrap;
+  }
+  
+  .line-2 h1 {
+    font-size: 75px;
+  }
+  
+  .section-container {
+    margin-top: 600px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  
+  .section-container h2 {
+    grid-area: 1/2/2/4;
+    font-size: 100px;
+  }
+  
+  .section-container p {
+    color: black;
+    grid-area: 2/2/3/4;
+    font-size: 30px;
+  }
+  
+  .section-container .profil {
+    margin-left: 75px;
+    grid-area: 1/4/3/5;
+  }/*# sourceMappingURL=.style.css.map */
