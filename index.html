@@ -6,15 +6,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" media="(max-width:850px) and (min-width:451px)" href="tablet.css">
+  <link rel="stylesheet" media="(max-width:450px)" href="smartphone.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>
-  <div class="main-container">
- <div class="perspective-text">
+
+  <div class="main-container-phone">
+    <div class="line-text"> 
+        <h1>Webentwicklung<br>Gabriel Costa Soares<br>Hamburg<br>HTML CSS JavasScript<br>Webdesign</h1>
+    </div>
+  </div>
+
+  <div class="main-container-tablet">
+    <div class="line-text">   
+        <h1>Webentwicklung<br>Gabriel Costa Soares<br>Hamburg<br>HTML CSS JavasScript<br>Webdesign</h1>
+    </div>
+  </div>
+
+<div class="main-container">
+  <div class="perspective-text">
   <div class="perspective-line">
     <p></p>
     <p>webentwicklung</p>
@@ -43,10 +57,8 @@
     <p>webdesign</p>
     <p></p>
   </div>
-</div>
+  </div>
  </div>
-
- </header>
 
  <div class="scrolling-text">
  <div class="line-1">
@@ -68,13 +80,6 @@
       </div>
   </div>
 </div>
-
-
-<div class="parent">
-  <div class="div1"> </div>
-  <div class="div2"> </div>
-  <div class="div3"> </div>
-  </div>
 
   <script src="app.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
