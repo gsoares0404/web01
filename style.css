@@ -146,11 +146,16 @@
   }
 
 
-
+.error_name{
+  color: red;
+  font-size: 20px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
 .input_fields_1{
   display: flex;  
   flex-direction: row;
-  
   justify-content: flex-start;
   align-content: center;
   align-items: flex-end;
@@ -168,6 +173,7 @@
   margin-left: -30px;
   border-bottom: 1px solid black;
   padding: 0 20px;
+  padding-bottom: 10px;
   font-size: 16px;
   border-top: none;
   border-left: none;
@@ -199,6 +205,7 @@
   margin-left: -20px;
   border-bottom: 1px solid black;
   padding: 0 20px;
+  padding-bottom: 10px;
   font-size: 16px;
   border-top: none;
   border-left: none;
@@ -225,4 +232,28 @@
   font-size: 16px;
   background: none;
   outline: none;
+}
+
+.sender {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 90px;
+  margin-left: 230px;
+}
+
+.sender button{
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border: none;
+  background-color: darkgoldenrod;
+  text-align: center;
+  transition: .3s ease;
+  font-size: 15px;
+  color: white;
+}
+
+.sender button:hover{
+  transform: scale(0.9);
 }
