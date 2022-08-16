@@ -1,80 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" media="(max-width:850px) and (min-width:451px)" href="tablet.css">
+  <link rel="stylesheet" media="(max-width:450px)" href="smartphone.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+<body>
 
-.input_fields_1{
-  display: flex;  
-  flex-direction: row;
-  
-  justify-content: flex-start;
-  align-content: center;
-  align-items: flex-end;
-}
+  <div class="main-container-phone">
+    <div class="line-text"> 
+        <h1>Webentwicklung<br>Gabriel Costa Soares<br>Hamburg<br>HTML CSS JavasScript<br>Webdesign</h1>
+    </div>
+  </div>
 
-.input_fields_1 label{
-  
-  padding: 0 40px;
-  font-size: 80px;
-}
+  <div class="main-container-tablet">
+    <div class="line-text">   
+        <h1>Webentwicklung<br>Gabriel Costa Soares<br>Hamburg<br>HTML CSS JavasScript<br>Webdesign</h1>
+    </div>
+  </div>
 
-.input_fields_1 input{
-  width: 50%;
-  margin-bottom: 20px;
-  margin-left: -30px;
-  border-bottom: 1px solid black;
-  padding: 0 20px;
-  font-size: 16px;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  background: none;
-  outline: none;
-}
+<div class="main-container">
+  <div class="perspective-text">
+  <div class="perspective-line">
+    <p></p>
+    <p>webentwicklung</p>
+  </div>
+  <div class="perspective-line">
+    <p>webentwicklung</p>
+    <div class="main-title">
+    <p>gabriel costa soares</p>
+    </div>
+  </div>
+  <div class="perspective-line">
+    <div class="main-title">
+      <p>gabriel costa soares</p>
+      </div>
+    <p>hamburg</p>
+  </div>
+  <div class="perspective-line">
+    <p>hamburg</p>
+    <p>html css javascript</p>
+  </div>
+  <div class="perspective-line">
+    <p>html css javascript</p>
+    <p>webdesign</p>
+  </div>
+  <div class="perspective-line">
+    <p>webdesign</p>
+    <p></p>
+  </div>
+  </div>
+ </div>
 
-.input_fields_2{
-  display: flex;  
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-content: center;
-  align-items: flex-end;
+ <div class="scrolling-text">
+ <div class="line-1">
+   <h1>FREIHEIT</h1>
+ </div>
+ <div class="line-2">
+   <h1>zu machen was wir wollen</h1>
+ </div>
+</div>
 
-}
+<div class="aboutme">
+  <div class="section-container">
+      <h2 data-aos="fade-right" data-aos-duration="1000">Wer ich bin</h2>
+      <p data-aos="fade-right" data-aos-duration="1000">Webentwickler und Webdesigner in Hamburg<br>
+      Ausbildung zum Full Stack Webentwickler<br>bei EBAC Sao Paulo zum Fotografen bei EVA Hamburg
+       </p>
+      <div class="profil">
+      <img src="https://static.wixstatic.com/media/03e2b9_dc2e7aa78d7a40f19e955333596f8e80~mv2.jpg/v1/fill/w_261,h_382,al_c,q_90,enc_auto/IMG_4413.jpg>">
+      </div>
+  </div>
+</div>
 
-.input_fields_2 label{
-  
-  margin-right: 30px;
-  padding-left: 40px;
-  font-size: 80px;
-}
 
-.input_fields_2 input{
-  width: 50%;
-  margin-bottom: 20px;
-  margin-left: -20px;
-  border-bottom: 1px solid black;
-  padding: 0 20px;
-  font-size: 16px;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  background: none;
-  outline: none;
-}
-.input_fields_3{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding: 0 40px;
-}
 
-.input_fields_3 label{
-  font-size: 80px;
-}
+<form id="form" action="/" method="get">
+  <div class="form_first">
+    <div class="details_personal">
+      <div class="fields">
+        <div class="input_fields_1">
+          <label>ICH HEIßE</label>
+          <input type="text" id="name" placeholder= "Dein Name">
+        </div>
+        <div class="error_name">
+          <div id="errorname"></div>
+        </div>
+        <div class="input_fields_2">
+          <label>MEINE EMAIL</label>
+          <input type="text" id="email" placeholder= "Deine Email">
+        </div>
+        <div class="error_email">
+          <div id="erroremail"></div>
+        </div>
+        <div class="input_fields_3">
+          <label>DAS IST MEINE NACHRICHT</label>
+          <textarea type="text" placeholder= "Deine Nachricht"></textarea>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="sender">
+<button type="submit">senden</button>
+</div>
+</form>
 
-.input_fields_3 textarea{
-  padding-top: 20px;
-  padding-left: 20px;
-  border-bottom: 1px solid black;
-  height: 200px;
-  font-size: 16px;
-  background: none;
-  outline: none;
-}
+
+  <script src="app.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>AOS.init();</script>
+ 
+
+</body>
+
+
+</html>
