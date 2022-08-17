@@ -82,32 +82,57 @@
 </div>
 
 
+	<form id="form" class="form">
+		<div class="form-control">
+			<label for="username">ICH HEIßE</label>
+			<input type="text" placeholder="dein Name" id="username" />
+      <i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			<small>Error message</small>
+		</div>
 
-<form id="form" action="/" method="get">
-  <div class="form_first">
-    <div class="details_personal">
-      <div class="fields">
-        <div class="input_fields_1">
-          <label>ICH HEIßE</label>
-          <input type="text" id="name" placeholder= "Dein Name">
+
+		<div class="form-control">
+      
+			<label for="username">MEINE EMAIL</label>
+			<input type="email" placeholder="deine Emailadresse" id="email" />
+			<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+      <small>Error message</small>
+
+
+
+      <div class="message">
+      <label>DAS IST MEINE NACHRICHT</label>
+      <textarea type="text" placeholder= "Deine Nachricht"></textarea>
+      </div>
+    </div>
+		
+
+
+
+
+
+<!--
+<form id="form" class="form" action="/" method="get">
+    
+        <div class="form_control">
+          <label for="username">ICH HEIßE</label>
+          <input type="text" id="username" placeholder= "Dein Name">
+          <small>Name ist ungültig</small>
         </div>
-        <div class="error_name">
-          <div id="errorname"></div>
-        </div>
-        <div class="input_fields_2">
-          <label>MEINE EMAIL</label>
+        <div class="form_control">
+          <label for="username">MEINE EMAIL</label>
           <input type="text" id="email" placeholder= "Deine Email">
-        </div>
-        <div class="error_email">
-          <div id="erroremail"></div>
+          <small>Emailadresse ist ungültig</small>
         </div>
         <div class="input_fields_3">
           <label>DAS IST MEINE NACHRICHT</label>
           <textarea type="text" placeholder= "Deine Nachricht"></textarea>
         </div>
-      </div>
-    </div>
-  </div>
+  
+  -->
+
 <div class="sender">
 <button type="submit">senden</button>
 </div>
